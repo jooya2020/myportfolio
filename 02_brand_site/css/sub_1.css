@@ -53,13 +53,13 @@
 .about_cont_01{
     
     height: 350px;
-    background-image: url('/images/about01.jpg');
+    background-image: url('../images/about01.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .about_cont_02{
     height: 500px;
-    background-image: url('/images/luwak.jpg');
+    background-image: url('../images/luwak.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
