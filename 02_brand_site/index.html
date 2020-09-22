@@ -21,6 +21,8 @@
             rel="stylesheet">
 
         <!-- Bootstrap -->
+
+        <link href="css/aos.css" rel="stylesheet">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
 
@@ -56,11 +58,13 @@
             </div>
         </div>
         
+        <iframe id="vedio" style="display:none;position: fixed; z-index: 99999;top:50%;left:50%;transform: translate(-50%,-50%);" width="560" height="315" src="https://www.youtube.com/embed/OdS2TuZoGMw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
         <div id="mask" style="display: none; opacity: 0.8;"></div>
 
 
 
-        
+
         <!-- header start -->
         <header class="st-navbar">
             <nav class="navbar navbar-default navbar-fixed-top clearfix" role="navigation">
@@ -127,13 +131,17 @@
             <div class="col-md-12">
                 <div class="st-home-unit">
                     <div class="hero-txt">
-                        <p id="hero-work">윤리적인 루왁커피의 향</p>
-                        <h2 class="hero-title">BEST
-                            <br>COFFEE<br class="show_1000">
-                            &<br class="show_1000">
-                            REST
-                            <br>TIME
-                        </h2>
+                        <div data-aos="fade-down" data-aos-easing="linear" data-aos-delay="2000" >
+                            <p id="hero-work">윤리적인 루왁커피의 향</p>
+                        </div>
+                        <div data-aos="fade-down" data-aos-easing="linear" data-aos-delay="2500" >
+                            <h2 class="hero-title">BEST
+                                <br>COFFEE<br class="show_1000">
+                                &<br class="show_1000">
+                                REST
+                                <br>TIME
+                            </h2>
+                        </div>
                         <!-- <p class="hero-sub-title">We Provide Hight Quality Bootstrap Template</p>
                         -->
                         <!-- <a href="#" class="btn btn-default btn-lg left-btn">Purchase Now</a> -->
@@ -157,25 +165,28 @@
     <div id="banner_cont">
 
         <div class="container">
-            <div class="col-sm-6 banner ban_color_1">
-                <div class="img_card">
-                    <a href="http://jooya2020.github.io/myportfolio/02_brand_site/sub_03.html">
-                        <img src="images/coffee_capsul.jpg" alt="캡술">
-                        <div class="txt_box">
-                            <h4 id="tit_c">Coffe capsul</h4>
-                            <p id="col_b">이번달 추천 로스팅 플레이버!</p>
-                        </div>
-                    </a>
+            <div data-aos="fade-down" data-aos-duration="1000">
+                <div class="col-sm-6 banner ban_color_1">
+                    <div class="img_card">
+                        <a href="http://jooya2020.github.io/myportfolio/02_brand_site/sub_03.html">
+                            <img src="images/coffee_capsul.jpg" alt="캡술">
+                            <div class="txt_box">
+                                <h4 id="tit_c">Coffe capsul</h4>
+                                <p id="col_b">이번달 추천 로스팅 플레이버!</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-
-            <div class="col-sm-6 banner ban_cont_2">
-                <div class="txt_card">
-                    <div class="t_box_1">
-                        <h3>Beginner Box</h3>
-                        <p>루왁커피로 입문하고 싶은<br>
-                            커피입문자를 위한 세트 패키지</p>
-                        <button class="butt" onclick="location.href='https://jooya2020.github.io/myportfolio/02_brand_site/sub_02_1.html'">more detail</button>
+            <div data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
+                <div class="col-sm-6 banner ban_cont_2">
+                    <div class="txt_card">
+                        <div class="t_box_1">
+                            <h3>Beginner Box</h3>
+                            <p>루왁커피로 입문하고 싶은<br>
+                                커피입문자를 위한 세트 패키지</p>
+                            <button class="butt" onclick="location.href='https://jooya2020.github.io/myportfolio/02_brand_site/sub_02_1.html'">more detail</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -193,36 +204,37 @@
 
         <div class="container border_wrap">
             <div class="border"></div>
-
-            <div class="col-sm-6 banner_slim">
-                <div class="b_cont b_txt">
-                    <div class="t_box_1">
-                        <h4>Subscription Service</h4>
-                        <p>매일 아침 상쾌함을 여는<br class="br">
-                            커피 한병 구독 서비스</p>
-                        <button class="butt" onclick="location.href='https://jooya2020.github.io/myportfolio/02_brand_site/sub_02_1.html'">more detail</button>
+            <div data-aos="zoom-in" data-aos-duration="1000">
+                <div class="col-sm-6 banner_slim">
+                    <div class="b_cont b_txt">
+                        <div class="t_box_1">
+                            <h4>Subscription Service</h4>
+                            <p>매일 아침 상쾌함을 여는<br class="br">
+                                커피 한병 구독 서비스</p>
+                            <button class="butt" onclick="location.href='https://jooya2020.github.io/myportfolio/02_brand_site/sub_02_1.html'">more detail</button>
+                        </div>
+                    </div>
+                    <div class="b_cont b_img text-center">
+                        <img src="images/bottle.png" alt="bottle">
                     </div>
                 </div>
-                <div class="b_cont b_img text-center">
-                    <img src="images/bottle.png" alt="bottle">
-                </div>
             </div>
-
-            <div class="col-sm-6 banner_slim flex_r">
-                <div class="b_cont b_txt">
-                    <div class="t_box_1">
-                        <h4>Pakaging Suvice</h4>
-                        <p>감사의 마음을 담은
-                            <br class="br">
-                            정성을 다한 포장서비스</p>
-                        <button class="butt" onclick="location.href='https://jooya2020.github.io/myportfolio/02_brand_site/sub_02_1.html'">more detail</button>
+            <div data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+                <div class="col-sm-6 banner_slim flex_r">
+                    <div class="b_cont b_txt">
+                        <div class="t_box_1">
+                            <h4>Pakaging Suvice</h4>
+                            <p>감사의 마음을 담은
+                                <br class="br">
+                                정성을 다한 포장서비스</p>
+                            <button class="butt" onclick="location.href='https://jooya2020.github.io/myportfolio/02_brand_site/sub_02_1.html'">more detail</button>
+                        </div>
+                    </div>
+                    <div class="b_cont b_img text-center">
+                        <img src="images/box.png" alt="bottle" style="width:95%">
                     </div>
                 </div>
-                <div class="b_cont b_img text-center">
-                    <img src="images/box.png" alt="bottle" style="width:95%">
-                </div>
             </div>
-
         </div>
 
     </div>
@@ -234,25 +246,27 @@
     <div id="banner_cont">
 
         <div class="container">
-
-            <div class="col-sm-6 banner a_info_1">
-                <div class="txt_card_1 info_bgc_1">
-                    <div class="t_box_1">
-                        <h3>BAND STORY</h3>
-                        <p>골루왁에서는 사람과 동물 모두에게<br>
-                            윤지적인 커피를 지향합니다.</p>
-                        <button class="butt" onclick="location.href='https://jooya2020.github.io/myportfolio/02_brand_site/sub_01.html'">more detail</button>
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-sm-6 banner a_info_1">
+                    <div class="txt_card_1 info_bgc_1">
+                        <div class="t_box_1">
+                            <h3>BAND STORY</h3>
+                            <p>골루왁에서는 사람과 동물 모두에게<br>
+                                윤지적인 커피를 지향합니다.</p>
+                            <button class="butt" onclick="location.href='https://jooya2020.github.io/myportfolio/02_brand_site/sub_01.html'">more detail</button>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-sm-6 banner a_info_2">
-                <div class="txt_card_1 info_bgc_2">
-                    <div class="t_box_1">
-                        <h3>Online Losting tour</h3>
-                        <p>커피 로스팅 가공 현장을<br>
-                            생생한 live방송으로 전해 드립니다.</p>
-                        <button type="button" class="butt but_bg" onclick="button1_click();">more detail</button>
+            <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <div class="col-sm-6 banner a_info_2">
+                    <div class="txt_card_1 info_bgc_2">
+                        <div class="t_box_1">
+                            <h3>Online Losting tour</h3>
+                            <p>커피 로스팅 가공 현장을<br>
+                                생생한 live방송으로 전해 드립니다.</p>
+                            <button type="button" class="butt but_bg" onclick="button1_click();">more detail</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -266,51 +280,52 @@
  <section class="container-fluid" id="Product_list">
     <div class="container p_list_bg">
         <div class="row text-center">
-
-            <h1>OUR PRODUCT</h2>
-            <h4 id="width_80">윤리적 브랜드 골루왁에서 지금까지 없었던 다양한 플레이버의 커피들을 만나보세요.</h4>
-
+            <div data-aos="fade-down" data-aos-duration="1000">
+                <h1>OUR PRODUCT</h2>
+                <h4 id="width_80">윤리적 브랜드 골루왁에서 지금까지 없었던 다양한 플레이버의 커피들을 만나보세요.</h4>
+            </div>
         </div>
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <div class="row flex_wrap">
+                <div class="box box1">
+                    <img src="images/product_01.jpg" alt="product_01">
+                    <h3>Coffee Losting</h3>
+                    <p>한국인이 선호하는 4종류의 로스팅
+                    </p>
+                </div>
+                <div class="box box2">
+                    <img src="images/product_02.jpg" alt="product_02">
+                    <h3>Coffe capsul</h3>
+                    <p>집에서도 간편하게 즐길 수 있는 골루왁 캡슐
 
-        <div class="row flex_wrap">
-            <div class="box box1">
-                <img src="images/product_01.jpg" alt="product_01">
-                <h3>Coffee Losting</h3>
-                <p>한국인이 선호하는 4종류의 로스팅
-                </p>
-            </div>
-            <div class="box box2">
-                <img src="images/product_02.jpg" alt="product_02">
-                <h3>Coffe capsul</h3>
-                <p>집에서도 간편하게 즐길 수 있는 골루왁 캡슐
+                    </p>
+                </div>
+                <div class="box box3">
+                    <img src="images/product_03.jpg" alt="product_03">
+                    <h3>Cold Brew</h3>
+                    <p>24시간 정성을 담아 깊은 향이 특징
 
-                </p>
-            </div>
-            <div class="box box3">
-                <img src="images/product_03.jpg" alt="product_03">
-                <h3>Cold Brew</h3>
-                <p>24시간 정성을 담아 깊은 향이 특징
-
-                </p>
-            </div>
-            <div class="box box4">
-                <img src="images/product_04.jpg" alt="product_04">
-                <h3>Coffe bottle</h3>
-                <p>4가지 플레이버의 커피를 간편하게
-                </p>
-            </div>
-            <div class="box box5">
-                <img src="images/product_05.jpg" alt="product_05">
-                <h3>Box Pakaging</h3>
-                <p>선물용으로 안전한 전용 박스포장 선택 가능
-                </p>
-            </div>
-            <div class="box box6 text-center">
-                <img src="images/product_06.jpg" alt="product_06">
-                <h3>All in one Box</h3>
-                <p>가정에서 드랍커피를 즐길 수 있도록<br>
-                    필요한 용품 AtoZ 기획 상품
-                </p>
+                    </p>
+                </div>
+                <div class="box box4">
+                    <img src="images/product_04.jpg" alt="product_04">
+                    <h3>Coffe bottle</h3>
+                    <p>4가지 플레이버의 커피를 간편하게
+                    </p>
+                </div>
+                <div class="box box5">
+                    <img src="images/product_05.jpg" alt="product_05">
+                    <h3>Box Pakaging</h3>
+                    <p>선물용으로 안전한 전용 박스포장 선택 가능
+                    </p>
+                </div>
+                <div class="box box6 text-center">
+                    <img src="images/product_06.jpg" alt="product_06">
+                    <h3>All in one Box</h3>
+                    <p>가정에서 드랍커피를 즐길 수 있도록<br>
+                        필요한 용품 AtoZ 기획 상품
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -379,22 +394,17 @@
 
  <section class="clients" >
     <div class="container">
-        
-
+        <div data-aos="zoom-in" data-aos-duration="1000">
             <div class="col-md-12">
-                
-
                 <ul class="clients-carousel">
                     <li><img src="images/client_1.jpg" class="img-responsive" alt="client_1"></li>
                     <li><img src="images/client_2.jpg" class="img-responsive" alt="client_1"></li>
                     <li><img src="images/client_3.jpg" class="img-responsive" alt="client_1"></li>
                     <li><img src="images/client_4.jpg" class="img-responsive" alt="client_1"></li>
                     <li><img src="images/client_5.jpg" class="img-responsive" alt="client_1"></li>
-
                 </ul>
             </div>
-
-       
+        </div>
     </div>
 </section>
 
@@ -430,6 +440,7 @@
         <!-- Include all compiled plugins (below), or include individual files as needed
         -->
 
+        <script src="js/aos.js"></script>
         <script src="js/swiper.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.easing.min.js"></script>
@@ -445,7 +456,9 @@
         <script src="js/main.js"></script>
         <script src="js/custom.js"></script>
 
-      
+        <script>
+            AOS.init();
+        </script>
         
     </body>
 </html>

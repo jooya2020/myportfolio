@@ -34,9 +34,15 @@ $(document).ready(function() {
 	$('#mask').click(function () {
 		$(this).hide();
 		$('.window').hide();
+        $('#vedio').hide();
+        $(function deleteVideo()
+        {
+        document.getElementById('vedio').src='';
+        })
 	});		
 	
 });
+
 
 
 

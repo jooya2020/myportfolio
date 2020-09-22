@@ -287,7 +287,10 @@ $(function() {
 
 function button1_click() {
 	$(function(){
-$('#dialog01').fadeIn(1000);
-$('#mask').fadeIn(1000);
+        $('#mask').fadeIn(1000);
+        $('#vedio').fadeIn(1000);
+        $(function LoadVideo(){
+            document.getElementById('vedio').src='https://www.youtube.com/embed/OdS2TuZoGMw';
+        });
     });
 }	
