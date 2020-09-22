@@ -1,0 +1,132 @@
+a{ color:inherit;margin:0px!important}
+li{list-style: none;}
+ul{padding:0}
+
+.sub_2{
+    width: 100%;    
+    padding-top:260px;
+    padding-bottom:326px;  
+    background: url("../images/sub_1_bg.jpg");
+    background-position: top;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+   
+
+}
+.title_tab{
+    display:flex;
+    justify-content: center;
+}
+.title_tab_01{
+    border-bottom :3px solid #fff
+}
+
+.border_bottem_hover{
+    border-bottom :3px solid #fff
+}
+.title_tab h4{
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.border_bottom{
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+}
+.sub_2 h1{
+    color:#fff;
+}
+.sub_2 h4{
+    color:#fff;
+    font-weight: 400;
+}
+.padding_bottom_20{
+padding-bottom:100px
+}
+.item_wrab{
+    padding-bottom: 100vh;
+}
+.item_container{
+    position:relative;
+    
+}
+
+.row_01{
+    top:-260px
+}
+.row_02{
+    top:330px
+}
+
+.item{
+    position:absolute;
+    height: 550px;
+    background: #f1f1f1;    
+    width :90%;
+    overflow: hidden;
+    text-align: center;
+    
+}
+.item img{
+    width: 70%;
+    margin-top:20px;
+}
+.btn_a{
+    width:160px;
+    padding:10px;
+    margin:40px auto 0px auto;
+    border:1px solid #bbb;
+    transition:1s;
+    border-radius:30px;
+}
+.btn_a:hover{
+    border:1px solid #fff;
+    
+}
+.btn_a:hover a{
+    color: #fff
+}
+.item_txt{
+    padding-top: 50px;
+    display:none;
+    transition:all 1s;   
+}
+.item:hover {background:rgb(88, 64, 64)}
+.item:hover .item_txt{display:block}
+
+.item_txt h3{
+    color: #fff
+}
+.item_txt h4{
+    font-weight: 100;
+    color: #fff
+}
+@media (max-width:767px){
+    .item_wrab{
+        padding-bottom: 3140px;
+    }
+    .item {
+        width: 94%;       
+    }
+    .item_02{
+        top:565px
+    }
+    .item_03{
+        top:1130px
+    }
+    .item_04{
+        top:1105px
+    }
+    .item_05{
+        top:1670px
+    }
+    .item_06{
+        top:2235px
+    }
+}

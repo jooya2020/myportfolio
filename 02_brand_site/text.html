@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <style>
+        .border_none{border:none;outline:0}
+        .padding_cusuer{padding:15px;cursor: pointer;}
+        .padding_cusuer:hover{color:#000!important;background-color:#ccc!important}
+        .brown{color:#fff!important;background-color:#58322e!important}
+        .tab_btn button{width:50%!important;float:left;background:#999}
+
+    </style>
+    <body>
+
+        <div class="w3-container">
+            <div class="tab_btn">
+                <button                    
+                    class="border_none padding_cusuer tablink brown"
+                    onclick="openTab(event,'tab01')">London</button>
+                <button                    
+                    class="border_none padding_cusuer tablink"
+                    onclick="openTab(event,'tab02')">Paris</button>
+            </div>
+        </div>
+
+        <div class="w3-container">
+            <div class="tab_c" id="tab01">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="tab02" class="tab_c" style="display:none">
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p>
+            </div>
+        </div>
+
+        <script>
+            function openTab(evt, tabName) {
+                var i,
+                    x,
+                    tablinks;
+                x = document.getElementsByClassName("tab_c");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].className = tablinks[i]
+                        .className
+                        .replace(" brown", "");
+                }
+                document
+                    .getElementById(tabName)
+                    .style
+                    .display = "block";
+                evt.currentTarget.className += " brown";
+            }
+        </script>
+
+    </body>
+</html>

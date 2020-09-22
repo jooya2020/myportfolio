@@ -1,0 +1,106 @@
+.sub_1{
+    width: 100%;
+    padding-top:10%;
+    padding-bottom:10%;
+    background: url("../images/sub_1_bg.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+@media(max-width: 767px) {
+    .sub_1{
+        background-size: cover;
+        padding-top:30%;
+        padding-bottom:30%;
+    }
+}
+.sub_1 h3{
+    color: #fff;
+    font-weight: 100;
+    padding-top: 30px;
+}
+.company, .ci,.sub_client{
+    width: 100%;
+    /* padding:150px; */
+    padding-top:100px;
+    padding-bottom:100px;
+    background: #fff;    
+}
+@media(max-width: 767px) {
+    .company, .ci,.sub_client{
+        padding-top:80px;
+        padding-bottom:90px;
+        text-align: center;
+    }
+}
+.ci{
+    background: rgb(245, 245, 245);
+}
+.company h2 ,.company h5, .ci h2 ,.ci h5 , .sub_client h2{
+    color:rgb(156, 156, 156)
+}
+.company_name h5,.ci h2,.ci img,.sub_client h2{
+    padding-bottom: 39px;
+}
+.about_content{
+    padding-top:30px;
+    padding-bottom:30px;
+    border-top: 1px solid #999;   
+}
+.about_cont_01{
+    
+    height: 350px;
+    background-image: url('/images/about01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about_cont_02{
+    height: 500px;
+    background-image: url('/images/luwak.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about01_cont_title{
+    width:240px;
+    padding-top: 30px;
+    padding-bottom:10px;
+    margin:0 auto;
+    border-bottom: 2px solid #444;
+}
+.about_content h4{
+    line-height:30px
+}
+.about_content .padding-left{
+    padding-left:30px;
+    padding-right:0
+}
+.about_content .padding-left>div{
+    padding-bottom:10px;  
+}
+.border_bottom{
+    border-bottom:1px solid #000;
+    margin-bottom:20px  
+}
+.padding_0{
+    padding-left:0
+}
+.border_bottom01{
+    border-bottom:1px solid #999;
+    height: 230px;
+}
+/* 루왁 */
+.Luwak_txt{    
+    padding-left: 0;
+}
+.Luwak_txt >h3{
+    padding-top: 10px;
+    padding-bottom: 40px;   
+}
+.Luwak_txt >p{
+border-bottom:1px solid #999;
+padding-bottom :75px;
+line-height:40px
+}
