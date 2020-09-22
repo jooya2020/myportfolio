@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="js/jquery.ajax.3.5.1.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/swiper.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/weather-icons.css">
+        <link rel="stylesheet" href="css/master.css">
+        
+    </head>
+    <body>
+    <div class="container-fluid">
+        <div class="container" id="weather_info">
+            <div class="row main_info ">
+                <div class="col-sm-6 text-center">
+                    <h1 class="city padding_t100"></h1>
+                    <h2 class="today opacity_60"></h2>
+                    <i class="icon padding_t50 margin_b50"></i>
+                    <p class="temp "></p>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="border opacity_60"></div>
+            </div>
+            <div class="row sub_info text-center">
+                <div class="swiper-container sub_weather_info col-sm-6 col-sm-offset-3">
+                    <div class="swiper-wrapper padding_b30">
+                        <div class="swiper-slide">
+                            <i class="wi wi-sunrise font_s2em padding_t3 padding_b5"></i>
+                            <p class="opacity_60 uppercase">sunrise</p>
+                            <div class="sunrise font_s1_2em"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <i class="wi wi-strong-wind font_s2em padding_b5" id="wi-strong-wind"></i>
+                            <p class="opacity_60 uppercase">wind</p>
+                            <div class="wind font_s1_2em"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <i class="wi wi-thermometer-exterior font_s2em padding_b5"></i>
+                            <p class="opacity_60 uppercase">min</p>
+                            <div class="min-theme font_s1_2em"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <i class="wi wi-sunset font_s2em padding_b5"></i>
+                            <p class="opacity_60 uppercase">sunset</p>
+                            <div class="sunset font_s1_2em"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <i class="wi wi-humidity font_s2em padding_b5"></i>
+                            <p class="opacity_60 uppercase">humidity</p>
+                            <div class="humidity font_s1_2em"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <i class="wi wi-thermometer font_s2em padding_b5"></i>
+                            <p class="opacity_60 uppercase">max</p>
+                            <div class="max-theme font_s1_2em"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination font_s1_2em"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var url="https://api.openweathermap.org/data/2.5/weather?lat=37.5666102&lon=126.9783881&appid=5b025c8ff79f6784133c1fb245c163c4"
+
+        $('weather_info .load_img').show();
+
+        $.getJSON(url, function(data) {
+            var sys = data.sys;  // 국가명, 일출/일몰
+            var sunrise = sys.sunrise;
+            var sun_up = new Date(sunrise*1000);
+            var cal=sun_up.toLocaleTimeString();
+            var cal_sunrise = cal.substr(2,5);
+            //일출
+            var sunset = sys.sunset;
+            var sun_down = new Date(sunset*1000);
+            var cal=sun_down.toLocaleTimeString();
+            var cal_sunset = cal.substr(2,5);
+            //일몰       
+            var wind = data.wind;  
+            var wind_1 = wind.speed;
+            var cal_wind = Math.floor(wind_1)+"m/s";
+            // var windColl=;             //바람
+            var city = data.name;               // 도시명
+            var re_city= city.replace('Seoul','GIMPO');
+            var weather = data.weather;         // 날씨 객체
+            var main = data.main;               // 온도 기압 관련 객체
+            var wmain = weather[0].main;        // 구름 상태(Cloudiness)
+            var w_id = weather[0].id;           // 날씨상태 id 코드
+            var icon = weather[0].icon;         // 날씨 아이콘 정보
+            var country = sys.country;          // 국가명
+            var temp = main.temp;               // 현재 온도
+            var temp_min = main.temp_min;       // 최저 온도
+            var temp_max = main.temp_max;       // 최고 온도
+            var humidity = main.humidity + "%";
+                   //습도
+
+            var today = new Date();
+            var year = today.getFullYear(); 
+            var month = today.getMonth() + 1; 
+            var date = today.getDate(); 
+            var day = today.getDay(); 
+            var week = new Array('SUN', 'MON', 'TUE', 'WEN', 'THU', 'FRI', 'SAT');
+            var cal_week = week[day];
+            var allDay = 'TODAY ' + year + '.' + month + '.' + date +'.' + cal_week ;
+            var icon_url = 'https://openweathermap.org/img/w/' + icon;
+            
+
+
+            var nowTimestamp = Math.floor(Date.now() / 1000);
+                        var weatherClass = 'wi wi-owm-';
+                        weatherClass += (nowTimestamp >= data.sunrise && nowTimestamp <= data.sunset ? 'night' : 'day');
+                        weatherClass += ('-' + weather[0].id);
+
+                        $("#weather_info .icon").addClass(weatherClass);
+
+                        $('#weather_info .city').html(re_city);
+                        $('#weather_info .w_id').html(wmain);
+                        $('#weather_info .min-theme').html(parseInt(temp_min-273.15)+'&deg' );
+                        $('#weather_info .max-theme').html(parseInt(temp_max-273.15)+'&deg' );
+                        $('#weather_info .temp').html(parseInt(temp-273.15)+'&deg;'+'C');
+                        $('#weather_info .load_img').hide();
+                        $('#weather_info .today').html(allDay);
+                        $('#weather_info .sunrise').html(cal_sunrise);
+                        $('#weather_info .sunset').html(cal_sunset);
+                        $('#weather_info .wind').html(cal_wind);
+                        $('#weather_info .sunset').html(cal_sunset);                   
+                        $('#weather_info .humidity').html(humidity);
+                       
+            
+        
+        })
+        .fail(function(){
+            alert("loading error");
+        });
+
+
+        
+    </script>
+        <script src="js/swiper.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/master.js"></script>
+    </body>
+</html>

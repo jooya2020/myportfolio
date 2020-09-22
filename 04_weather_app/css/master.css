@@ -1,0 +1,134 @@
+
+*{
+    margin: 0;
+    font-weight: 300;
+    /* font-weight: normal; */
+}
+p{
+    margin-bottom: 2px;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+
+body{
+    height: 100vh;
+    color:#fff;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(-45deg,#23d5ab,#23a6d5,#9438df,#e95b88,#9438df,#23a6d5,#23d5ab);
+    background-size: 3000% 500%;
+    animation: wheather 40s infinite;
+    /* text-shadow: 1px 1px 1px #999; */
+}
+/* bg animate */
+@keyframes wheather{
+    0%{
+        background-position : left;
+    }
+ 
+    100%{ 
+        background-position : right;
+    }
+}
+.container-fluid{
+    overflow: hidden;
+}
+.main_info > div{
+    margin: 0 auto;
+}
+.border{
+    width: 50px;
+    height: 5px;
+    background:#fff ;
+    margin: 0 auto;
+}
+/* slide */
+.sub_info{
+    padding-top: 50px;
+}
+.sub_info div{
+    cursor: pointer;
+}
+
+.swiper-container{
+    width: 80%;
+    height: auto;
+    
+}
+/* padding */
+
+.padding_t3{
+    padding-top: 3px;
+}
+.padding_t50{
+    padding-top: 50px;
+}
+.padding_t100{
+    padding-top: 100px;
+}
+.padding_b5{
+    padding-bottom: 15px;
+}
+.padding_b30{
+    padding-bottom: 30px;
+}
+/* margin */
+.margin_b50{
+    margin-bottom: 50px;
+}
+
+
+/* text size */
+
+#weather_info .city{
+    font-weight: 500;
+    font-size: 1.8em;
+}
+#weather_info .today{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+/* icon size */
+.icon{
+    font-size: 8em; 
+    text-shadow: 4px 4px 4px #999;   
+}
+
+.temp{
+    font-size: 3em;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.font_s1_2em{
+    font-size: 1.5em;
+}
+.font_s2em{
+    font-size: 2em;
+}
+/* opacity */
+.opacity_60{
+    opacity: 0.6;
+    font-size: 0.8rem;
+}
+
+@media(max-width:767px){
+    .padding_t100{
+        padding-top: 10%;
+    }
+
+}
+@media(max-width:600px){
+      .padding_t100{
+        padding-top: 5%;
+    }
+}
+@media(max-width:375px){
+    .padding_t100{
+        padding-top: 5%;
+    }
+    .icon{
+        font-size: 6em; 
+    }
+    
+}
