@@ -1,0 +1,502 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+<meta property="og:image" content="이미지"/>
+<meta property="og:url" content="유알엘"/>
+<meta property="og:description" content="책과 복합문화예술의 도시로."/>
+<meta property="og:title" content="파주출판도시"/>
+
+<title>Untitled Document</title>
+<!-- 스크립트&css링크 시작 -->
+<script src="js/jqury.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/master.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon2.ico" />
+
+<!-- 스크립트&css링크 끝 -->
+</head>
+
+<body>
+
+    <div id="section01">
+        
+           <!-- web menu start -->
+        <div class="menu_box web">
+            <div class="logo"><a href="#section01"><img src="images/파주-로고.png" alt="파주출판도시"></a></div>
+                <!-- logo -->       
+            <ul class="asidemenu">
+                <li><a href="#section01">Main</a></li>
+                <li><a href="#section02">About</a></li>
+                <li><a href="#section03">APCI-Center</a></li>
+                <li><a href="#section04">Mimesis</a></li>
+                <li><a href="#section05">Map</a></li>             
+            </ul>
+        </div>
+        <!--web menu end -->
+        
+        <!-- Swiper start-->
+        <div class="se01-wrap">
+            <div class="main-slide">
+                <div class="swiper-container swiper-1">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide main-bg1"></div>
+                    <div class="swiper-slide main-bg2"></div>
+                    <div class="swiper-slide main-bg3"></div>
+                    <div class="swiper-slide main-bg4"></div>
+                </div>
+            </div>   
+        </div>
+        <!-- Swiper end-->
+        <!-- 메인페이지 타이틀 start -->
+        <div class="text-se01">
+            <h2>photo</h2>
+            <h1>Paju Publishing City</h1>
+            <p>파주출판도시에서 막 찍어도 인생샷. 돌아오는 주말 체험 & SNS 사진찍기 좋은 '추억쌓기' 추천도시. </p>
+              <!-- Add Pagination -->
+            <div class="swiper-pagination" id="swiper-pagination"></div>
+        </div>
+        <!-- 메인페이지 타이틀 end -->
+    </div>
+
+    <script>
+        var swiper = new Swiper('.swiper-1', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + '</span>';
+            },
+        },
+        });
+        new swiper('swiper-1');
+    </script>
+<!-- section01 끝 -->
+<div id="section02">
+    <div class="cover">
+        <div class="sec-2-title">
+            <img src="images/title.png" alt="제목">
+        </div>
+        <div class="sec-2-container">
+            <div class="sec2-align">
+                <div class="sec-2-box">
+                    <ul>
+                        <li>책의 도시</li>
+                        <li><img src="images/book-city.png" alt="도서관 사진"></li>
+                        <li>책과 출판의도시<br>
+                            “Book City”</li>
+                    </ul>
+                </div>
+                <div class="sec-2-box">
+                    <ul>
+                        <li>건축의 도시</li>
+                        <li><img src="images/construction.png" alt="건물 사진"></li>
+                        <li>다채로운 건물들<br>
+                            “꽃피운 건축”</li>
+                    </ul>
+                </div>
+                <div class="sec-2-box">
+                    <ul>
+                        <li>문화의 도시</li>
+                        <li><img src="images/experience.png" alt="체험 사진"></li>
+                        <li>파주 출판도시에서<br>
+                            어떤 “문화체험”</li>
+                    </ul>
+                </div>
+            
+                <div OnClick="location.href ='#section05'"
+
+            class="sec-2-box "id="popup-button" style ="cursor: pointer;">
+                    <ul>
+                        <li>오시는 길</li>
+                        <li><img src="images/come-to-way.png" alt="파주 이미지"></li>
+                        <li >파주출판 도시<br>
+                            “오는 방법” </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- section02 끝 -->
+<div id="section03">
+    <div class="bg-c">
+    <div class="container03">
+        <div class="sec03-tab">
+            <ul>
+                <li curser="pointer"><a id="tab-1" href="#none" ><img src="images/bar-btn.jpg" alt="지혜의 숲"></a></li>
+                <li curser="pointer"><a id="tab-2" href="#none" ><img src="images/bar-btn-1.png" alt="활자의 숲"></a></li>
+                <li curser="pointer"><a id="tab-3" href="#none" ><img src="images/bar-btn-1.png" alt="지지향"></a></li>
+            </ul>
+        </div>
+        <div class="sec03-warp tab-warp01">
+        
+            <div class="text">
+                
+                <div class="slide-text tab-txt-1">            
+                        <h1>Forest of Wisdom</h1>
+                        <h2>지혜의 숲</h2>
+                        <p>아시아출판문화정보센터 1층에 위치하고 있는 
+                            지혜의 숲은 가치 있는 책을 한데 모아 보존 보호하고
+                            관리하며 함께 보는 공동의 서재로,
+                            천장 높이까지 뻗어 있는 책꽂이에 쌓여있는 책들에 압도 되는 것을 체감할 수 있는  곳입니다.
+                            체험 투어 프로그램등 다양한 체험 및 전시를 관람할 수있지만 그냥 책만 읽고 있어도 좋은 힐링스팟 중 하나입니다.
+                            
+                            
+                        </p>           
+                </div>
+            </div>
+
+            <div class="slide">
+                    <!-- Swiper -->
+                <div class="swiper-container slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide W-bg-1"></div>
+                        <div class="swiper-slide W-bg-2"></div>
+                        <div class="swiper-slide W-bg-3"></div>
+                        <div class="swiper-slide W-bg-4"></div>
+                        <div class="swiper-slide W-bg-5"></div>
+                        <div class="swiper-slide W-bg-6"></div>
+                        <div class="swiper-slide W-bg-7"></div>
+                        <div class="swiper-slide W-bg-8"></div>
+                        <div class="swiper-slide W-bg-9"></div>
+                        <div class="swiper-slide W-bg-10"></div>
+                        <div class="swiper-slide W-bg-11"></div>
+                        <div class="swiper-slide W-bg-12"></div>
+                        <div class="swiper-slide W-bg-13"></div>
+                        <div class="swiper-slide W-bg-14"></div>
+                        
+                    </div>
+            <!-- Add Pagination -->
+                    <div class="swiper-pagination">   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec03-warp tab-warp02" id="off">
+            
+            <div class="text">
+                <div class="slide-text tab-txt-1">            
+                    <h1>Forest of Letterpress</h1>
+                    <h2>활자의 숲</h2>
+                    <p>사람들이 책으로 부터 멀어지는 것을 걱정하는 작가와 지식인,예술가들이 시작했습니다. 세계최초의 활판인쇄국가이자 가장 우수한 제책기술을 지닌 우리나라에서 활판인쇄술과 오침제본술이 사라지는 것을 안타까워하는 출판인쇄인들이 힘을 보태 만들었다고 하는 곳.
+                    천창에서 쏱아지는 햇살 아래서 활자들이 반짝이는 것을 볼 수 있습니다.
+                    </p>           
+                </div>
+     
+            </div>
+
+            <div class="slide">
+                    <!-- Swiper -->
+                <div class="swiper-container slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide h-bg-1">Slide *1</div>
+                        <div class="swiper-slide h-bg-2">Slide 2</div>
+                        <div class="swiper-slide h-bg-3">Slide 3</div>
+                        <div class="swiper-slide h-bg-4">Slide 4</div>
+                        
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination">   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec03-warp tab-warp03" id="off">
+            
+            <div class="text">
+                
+    
+
+                <div class="slide-text tab-txt-1">            
+                    <h1>Guesthouse "Jijihyang"</h1>
+                    <h2>지지향</h2>
+                    <p>잠들지 않는 서비스를 제공하는 지지향 라운지는 열린 독서문화공간 지혜의 숲이기도 합니다.
+                        잠 못 드는 깊은 밤을 책을 벗삼아 지새우는 것 역시 지지향에서 할수 있는 특별한 경험입니다. 밤이 되면 지혜의 숲으로 연결되어있는 통로가 문을 닫고 라운지에만 책을 읽을 수 있고, 각 객실마다 TV대신 책이 비치되어 있어 독서를 사랑하는 이에게는 핫한 숙소입니다.
+                    </p> 
+                </div>          
+            </div>
+
+            <div class="slide">
+                <!-- Swiper -->
+                <div class="swiper-container slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide bg-1">Slide** 1</div>
+                        <div class="swiper-slide bg-2">Slide 2</div>
+                        <div class="swiper-slide bg-3">Slide 3</div>
+                        <div class="swiper-slide bg-4">Slide 4</div>
+                        
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination">   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slide  -->
+</div>
+</div>
+</div>
+<!-- section03 끝 -->
+<div id="section04">
+    <div class="txt04">
+            <h1>Mimesis Art Musium </h1>
+            <h2>미메시스 아트 뮤지엄</h2>
+            <p>다양한 곡면으로 이루어진 백색의 전시 공간은 가급적 인조광을 배제하고 자연광을 끌어 들여 은은하고 차분한 분위기를 연출하며 시시때때로 변하는 빛의 향연을 볼 수 있는 곳으로 모더니즘 건축의 마지막 거장이라고 불리는  포르투갈의 건축가 알바루 시자가 설계해 더욱 주목을 받고 있습니다.</p>
+
+    </div>
+    <div class="swiper-container swiper1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="all-bg-1">Slide 1</div>
+            </div>
+            <div class="swiper-slide">
+                <div class="all-bg-2">Slide 2</div>
+            </div>
+            <div class="swiper-slide">
+                <div class="all-bg-3">Slide 3</div>
+            </div>
+            <div class="swiper-slide">
+                <div class="all-bg-4">Slide 4</div>
+            </div>
+         </div>
+         <div class="swiper-pagination"></div>
+        
+    </div>
+</div>
+<!-- section04 끝 -->
+<div id="section05">
+    <div class="map-wrap">
+        <div class="map-text">
+            <div> 
+                <h1>오시는 길</h1>
+                <h2>승용차</h2>
+                            
+                자유로 다음방향 통일동산 방향<br>
+                일산대교 기점 7km 지점에 위치한 장월IC에서<br>
+                파주출판도시 진입로 표지판을 보고 들어오시면 됩니다.<br>
+
+                <h2>대중교통</h2>
+
+                서울 다음방향 파주출판도시<br>
+                2200번 합정역 - 파주출판도시(자유로 직행)<br>
+                200번 합정역 - 일산신도시 - 교하신도시 - 파주출판도시<br>
+                <br>
+                일산 다음방향 파주출판도시<br>
+                20번 원당역 - 식사동 - 덕이동 - 파주출판도시<br>
+                200번 일산신도시 - 교하신도시 - 파주출판도시<br>
+                <br>
+            </div>
+           
+        </div>
+        <div class="map-cont">
+            <div id="map"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9f26cbe9e1a5ef10f6c81a7abf7111db"></script>
+    <script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
+        mapOption = { 
+            center: new kakao.maps.LatLng(37.713632, 126.687744), // 지도의 중심좌표
+            level: 5 // 지도의 확대 레벨
+        };
+    
+    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+     
+    // 마커를 표시할 위치와 내용을 가지고 있는 객체 배열입니다 
+    var positions = [
+        {
+            content: '<div style="text-align: center ;"> 아시아출판문화정보센터<br>"지혜의 숲"<br>"활자의 숲"<br>"지지향" </div>', 
+            latlng: new kakao.maps.LatLng(37.708287, 126.686802)
+        },
+        {
+            content: '<div style="width:160px;padding:0;text-align: center ;"> 미메시스 아트 뮤지엄 </div>', 
+            latlng: new kakao.maps.LatLng(37.716767, 126.688779)
+        },
+        {
+            content: '<div style="text-align: center ;"> 파주출판단지 근린공원 </div>', 
+            latlng: new kakao.maps.LatLng(37.719635, 126.688181)
+        },
+        {
+            content: '<div style="text-align: center ;"> Milkbook(밀크북 카페) </div>',
+            latlng: new kakao.maps.LatLng(37.708601, 126.688378)
+        },
+        {
+            content: '<div style="width:150px;padding:0;text-align: center ;">빵 굽고 커피 볶는 갤러리 카페a</div>',
+            latlng: new kakao.maps.LatLng(37.716785, 126.691487)
+        }
+    ];
+    
+    for (var i = 0; i < positions.length; i ++) {
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+            map: map, // 마커를 표시할 지도
+            position: positions[i].latlng // 마커의 위치
+        });
+    
+        // 마커에 표시할 인포윈도우를 생성합니다 
+        var infowindow = new kakao.maps.InfoWindow({
+            content: positions[i].content // 인포윈도우에 표시할 내용
+        });
+    
+        // 마커에 mouseover 이벤트와 mouseout 이벤트를 등록합니다
+        // 이벤트 리스너로는 클로저를 만들어 등록합니다 
+        // for문에서 클로저를 만들어 주지 않으면 마지막 마커에만 이벤트가 등록됩니다
+        kakao.maps.event.addListener(marker, 'mouseover', makeOverListener(map, marker, infowindow));
+        kakao.maps.event.addListener(marker, 'mouseout', makeOutListener(infowindow));
+    }
+    
+    // 인포윈도우를 표시하는 클로저를 만드는 함수입니다 
+    function makeOverListener(map, marker, infowindow) {
+        return function() {
+            infowindow.open(map, marker);
+        };
+    }
+    
+    // 인포윈도우를 닫는 클로저를 만드는 함수입니다 
+    function makeOutListener(infowindow) {
+        return function() {
+            infowindow.close();
+        };
+    }
+    
+    </script>
+</div>
+<!-- section05 끝 -->
+<script>
+	/**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
+	if (jQuery(window).width() > 0) {
+    jQuery(window).on("scroll",function(ev){
+        if(jQuery(window).scrollTop() > 150 ) { /**높이 픽셀 조정**/
+            jQuery('.menu_box').addClass('fixed');
+              /**위의 높이에서 .fixed 클래스를 추가합니다. 스타일에서 자유롭게 수치 조절 가능합니다.**/
+        }
+        else{
+			jQuery('.menu_box').removeClass('fixed');
+            
+        }
+        return false;
+    });
+    }
+    
+// 섹션 1에서 로고 안보이게 하기 시작
+	if (jQuery(window).height() >= -1) {
+    jQuery(window).on("scroll",function(ev){
+        if(jQuery(window).scrollTop() > 1000 ) { /**높이 픽셀 조정**/
+            jQuery('.logo').addClass('show');
+			jQuery('.logo').removeClass('remove');
+              /**위의 높이에서 .fixed 클래스를 추가합니다. 스타일에서 자유롭게 수치 조절 가능합니다.**/
+        }
+        else{
+			jQuery('.logo').addClass('remove');
+			jQuery('.logo').removeClass('show');
+            
+        }
+        return false;
+    });
+	}
+// 섹션 1에서 로고 안보이게 하기 끝
+
+	/**마우스 부드럽게 해당위치로 이동**/
+	$(function(){
+	   $('a[href^=#]').click(function() {
+		  var speed = 100;
+		  var href= $(this).attr("href");
+		  var target = $(href == "#" || href == "" ? 'html' : href);
+		  var position = target.offset().top;
+		  $('body,html').animate({scrollTop:position}, speed, 'swing');
+		  return false;
+	   });
+	});
+
+// swiper 
+
+
+var swiper = new Swiper('.slider', {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      freeMode: true,
+      observer: true,
+      observeParents: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+new Swiper('.swiper1', {
+    direction:'vertical',
+    slidesPerView: 1,
+    spaceBetween: 0,
+     pagination : {
+        el : '.swiper-pagination',
+       
+    clickable:true,
+    },
+    loop : true, // 무한 루프 슬라이드, 반복이 되며 슬라이드가 끝이 없다.
+    
+});
+// tab
+$(function(){
+    $("#tab-1").click(function(){
+        document.getElementById("tab-1").innerHTML='<img src="images/bar-btn.jpg" alt="지혜의 숲">'
+        document.getElementById("tab-2").innerHTML='<img src="images/bar-btn-1.png" alt="지혜의 숲">'
+        document.getElementById("tab-3").innerHTML='<img src="images/bar-btn-1.png" alt="지혜의 숲">'
+            // tab
+        $(".tab-warp01").css("display","block");
+        $(".tab-warp01").css("display","flex");
+        $(".tab-warp02").css("display","none");
+        $(".tab-warp03").css("display","none");
+            // text/slide
+            $('.swiper-wrapper').slick('setPosition');
+            $('#my-tab').on('show', function(){
+                $(this).find('.swiper-container')[0].swiper.update()
+            });
+   
+    });
+    $("#tab-2").click(function(){
+        document.getElementById("tab-1").innerHTML='<img src="images/bar-btn-1.png" alt="지혜의 숲">'
+        document.getElementById("tab-2").innerHTML='<img src="images/bar-btn.jpg" alt="지혜의 숲">'
+        document.getElementById("tab-3").innerHTML='<img src="images/bar-btn-1.png" alt="지혜의 숲">'
+            // tab
+        $(".tab-warp02").css("display","block");
+        $(".tab-warp02").css("display","flex");
+        $(".tab-warp01").css("display","none");
+        $(".tab-warp03").css("display","none");
+            // text/slide
+            
+            $('#my-tab').on('show', function(){
+                $(this).find('.swiper-container')[0].swiper.update()
+            });
+    });
+    $("#tab-3").click(function(){
+        document.getElementById("tab-1").innerHTML='<img src="images/bar-btn-1.png" alt="지혜의 숲">'
+        document.getElementById("tab-2").innerHTML='<img src="images/bar-btn-1.png" alt="지혜의 숲">'
+        document.getElementById("tab-3").innerHTML='<img src="images/bar-btn.jpg" alt="지혜의 숲">'
+            // tab
+        $(".tab-warp03").css("display","block");
+        $(".tab-warp03").css("display","flex");
+        $(".tab-warp01").css("display","none");
+        $(".tab-warp02").css("display","none");
+            // text/slide
+            $('.swiper-wrapper').slick('setPosition');
+            $('#tab-3').on('show', function(){
+                $(this).find('.swiper-container')[0].swiper.update()
+            });
+    });
+
+});
+
+
+
+
+
+</script>
+</body>
+</html>
