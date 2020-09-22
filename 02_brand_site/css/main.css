@@ -1,20 +1,19 @@
 #mask {
-  position:absolute;
-  left:0;
-  top:0;
+  position: fixed;  
   z-index:9000;
-  background-color:#000;
+  background-color:rgba(0, 0, 0, 0.692);
   display:none;
 }  
 #boxes .window {
-  position:absolute;
-  left:0;
-  top:0;
+  position: fixed; 
+  top:50%;
+  left:50%;
+  transform:translate(-50% , -50%); 
   width:440px;
   height:200px;
   display:none;
   z-index:9999;
-  padding:20px;
+  padding:20px 20px 50px 20px;
   border-radius: 15px;
   text-align: center;
 }
@@ -26,14 +25,13 @@
   font-family: 'Segoe UI Light', sans-serif;
   font-size: 15pt;
 }
+
 .maintext{
 	text-align: center;
   font-family: "Segoe UI", sans-serif;
   text-decoration: none;
 }
-body{
-  background: url('bg.jpg');
-}
+
 #lorem{
 	font-family: "Segoe UI", sans-serif;
 	font-size: 12pt;
@@ -45,16 +43,21 @@ body{
   padding: 10px 20px;
 }
 #popupfoot a{
-	text-decoration: none;
+  text-decoration: none;
+ 
+}
+.agree{
+  border:1px solid green;
+  padding:10px;margin-bottom: 10px;
+  border-radius:3px;
+  color: green;
+  opacity: 1!important;
+}
+.close {
+  text-shadow:none !important;
 }
 .agree:hover{
-  background-color: #D1D1D1;
+  background-color: green;
+  color: white
 }
-.popupoption:hover{
-	background-color:#D1D1D1;
-	color: green;
-}
-.popupoption2:hover{
-	
-	color: red;
-}
+

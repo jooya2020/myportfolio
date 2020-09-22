@@ -1,3 +1,5 @@
+// madin pop_up
+
 //sub_2
 
 $(".title_tab_01").ready(function () 
@@ -281,4 +283,11 @@ $(function() {
           $top.removeClass('on')
   
     });
-})
+});
+
+function button1_click() {
+	$(function(){
+$('#dialog01').fadeIn(1000);
+$('#mask').fadeIn(1000);
+    });
+}	

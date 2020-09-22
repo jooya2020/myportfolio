@@ -30,9 +30,11 @@
         <link href="css/owl.transitions.css" rel="stylesheet">
         <link href="css/swiper.css" rel="stylesheet">
         
-
+        <link href="css/main.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link href="css/master.css" rel="stylesheet">
+        
+        
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media
         queries -->
@@ -41,6 +43,24 @@
         src="js/respond.min.js"></script> <![endif]-->
     </head>
     <body style="width: 100%">
+        
+        <div id="boxes">
+            <div style="display: none;" id="dialog" class="window">
+                <h3>포트폴리오 홈페이지</h3>
+                <div id="lorem">
+                    <p style="text-align: center">이 홈페이지는 포트폴리오용 홈페이지 입니다. <br>상업적 용도롤 사용되지 않습니다.</p>
+                </div>
+                <div id="popupfoot">
+                    <a href="#" class="close agree" >확인</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="mask" style="display: none; opacity: 0.8;"></div>
+
+
+
+        
         <!-- header start -->
         <header class="st-navbar">
             <nav class="navbar navbar-default navbar-fixed-top clearfix" role="navigation">
@@ -232,7 +252,7 @@
                         <h3>Online Losting tour</h3>
                         <p>커피 로스팅 가공 현장을<br>
                             생생한 live방송으로 전해 드립니다.</p>
-                        <button class="butt but_bg">more detail</button>
+                        <button type="button" class="butt but_bg" onclick="button1_click();">more detail</button>
                     </div>
                 </div>
             </div>
@@ -410,7 +430,6 @@
         <!-- Include all compiled plugins (below), or include individual files as needed
         -->
 
-       
         <script src="js/swiper.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.easing.min.js"></script>
@@ -423,7 +442,10 @@
         <script src="js/owl.carousel.js"></script>
         <script src="js/jquery.ajaxchimp.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/main.js"></script>
         <script src="js/custom.js"></script>
+
+      
         
     </body>
 </html>
