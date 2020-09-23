@@ -1,0 +1,29 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "BillieHarleyRegular";
+  src: url("./fonts/BillieHarley.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/BillieHarley.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/BillieHarley.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/BillieHarley.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Typo_PapyrusL";
+  src: url("./fonts/Typo_PapyrusL.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Typo_PapyrusL.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Typo_PapyrusL.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Typo_PapyrusL.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NanumAnSsangCe";
+  src: url("./fonts/NanumAnSsangCe.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/NanumAnSsangCe.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/NanumAnSsangCe.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/NanumAnSsangCe.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

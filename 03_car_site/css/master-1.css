@@ -1,0 +1,503 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+    font-family: "BillieHarleyRegular";
+    src: url("../fonts/BillieHarley.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/BillieHarley.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/BillieHarley.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/BillieHarley.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Typo_PapyrusL";
+    src: url("../fonts/Typo_PapyrusL.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/Typo_PapyrusL.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/Typo_PapyrusL.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/Typo_PapyrusL.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: inherit;
+}
+/* reset */
+
+/* section01 start */
+/* bg */
+.section01{
+    background: url("../img/sonata5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+@media(max-width:376px){
+    .section01{
+        background-position:-820px !important;
+    }
+}
+/* @media(max-width:750px){
+    .section01{
+        background-position:center;
+    }
+} */
+@media(max-width:767px){
+    .section01{
+        background-position:-950px;
+    }
+}
+/* logo */
+.logo_wrab{
+    margin-top: 10px;
+}
+/* title */
+#white{
+    color: #fff;
+}
+.title01{    
+    text-align: right;   
+    padding-top: 145px;
+    padding-right: 110px;
+    text-shadow: black 1px 0 100px;
+}
+.title01 h1{
+    font-family: "BillieHarleyRegular";
+    font-size: 50pt;
+    
+}
+
+.title01 h2{
+    font-family: "Typo_PapyrusL";
+    font-size: 70pt;
+}
+@media(max-width:376px){
+    .title01{     
+        margin-top: 60px;
+        padding-right: 0;
+    }
+}
+@media(max-width:767px){
+    .title01{     
+        padding-top: 180px;
+        padding-right: 0;
+    }
+    .title01 h1{
+        font-family: "BillieHarleyRegular";
+        font-size: 30pt;
+        text-align: center;
+    }
+  
+    .title01 h2{
+        text-align: center;
+        font-size: 40pt;
+    }
+}
+
+/* section01 end */
+/* section02 start */
+/* icon */
+.section02{
+    background: #1b293a;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.i_w{
+    text-align: center;
+}
+.i_box{
+    width: 170px;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 10px 0;
+    margin-top: 5px;
+}
+.i_r{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.i_box h4{
+    color: #fff;
+    text-align: center;    
+}
+@media(max-width:376px){
+    .i_box{
+        width: 150px;     
+    }
+}
+@media(max-width:767px){
+    
+}
+/* section03 start */
+.section03{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.col-tit{
+    font-size: 50px;    
+}
+.bolder{
+    font-weight: bolder;
+}
+.p-t-150{
+    margin-top: 50px;
+}
+.til-c-1{
+    width: 35%;
+}
+.ul_1 h3{
+    margin:0!important;
+    font-size: 30pt;
+}
+.ul_1{
+    margin:0!important;
+    margin-top: 10px!important;
+    font-size: 30pt;
+    
+}
+@media(max-width:767px){
+    .col-tit{
+        font-size: 28pt;
+    }
+    .ul_1 h3{
+        font-size: 25pt;
+    }
+    .ul_1{
+        font-size: 22pt;
+    }
+}
+
+.car-brand-color{
+    padding-top: 15px;
+}
+.car-brand-color > ul {
+    display: flex;
+}
+
+.car-brand-color > ul > li {
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+#wh {
+    background-color: #f2f4f3;
+}
+#bl {
+    background-color: #abadac;
+}
+#hg{
+    background-color: #6a6c6d;
+}
+#ng{
+    background-color: #4e5357;
+}
+#ob{
+    background-color: #272e39;
+}
+#mb{
+    background-color: #1b1a1d;
+}
+#fr{
+    background-color: #970f1b;
+}
+.bl,.hg ,.ng ,.ob,.mb,.fr{
+    display: none;
+}
+.ul_1{
+    display: flex ;
+    justify-content: center;
+    padding-left: 0!important;
+}
+.bg_03{    
+    padding-bottom: 100px;
+    border-bottom: 1px solid #999;
+}
+.p-11{
+    padding-left: 100px;
+}
+.wh img,.bl img,.hg img,.ng img,.ob img,.mb img,.fr img{
+    padding-left: 180px;
+}
+@media(max-width:376px){
+    .wh img,.bl img,.hg img,.ng img,.ob img,.mb img,.fr img{
+        padding-left: 30px;
+        width: 300px!important;
+    }
+    #wh,#bl,#hg,#ng,#ob,#mb,#fr{
+        height:30px!important;
+    }
+}
+@media(max-width:767px){
+    .wh img,.bl img,.hg img,.ng img,.ob img,.mb img,.fr img{
+        padding-left: 10px;
+        width: 425px;
+    }
+    #wh,#bl,#hg,#ng,#ob,#mb,#fr{
+        margin-right: 10px;
+        height:50px;
+    }
+    .p_l{
+        margin-left: 20px;
+    }
+    .p-11{
+        padding-left: 10px;
+    }
+}
+/* section03 end */
+/* section04 start */
+.view {
+    width:1900px;
+    height:260px;
+    position: absolute;
+    border:1px solid red;
+    overflow: hidden;
+
+
+
+
+
+  }
+
+  .scrollBlind {
+    width:1920px;
+    height:100%;
+    overflow-y:scroll;
+    background-color: green;
+
+
+
+
+  }
+/* taxt */
+.txt_box_1{
+    padding-top: 70px;
+}
+.in_9{
+    width: 99%;
+    display: inline-block;
+    height: auto;
+}
+.in_9 p{
+    font-size: 17px;
+    line-height: 28px;
+    padding-top: 8px;
+}
+@media(max-width:376px){
+    #w_1{ 
+        width: 315px;       
+        
+    }
+}
+/* img */
+.p_40{
+    margin-top: 40px;
+}
+.p_20{
+    padding-top: 30px;
+}
+.p_300{
+    padding-top: 300px;
+}
+
+.img_wrab{
+    overflow: hidden;
+}
+.img_wrab img{
+    width: 100%;
+    transition: all 1s;
+}
+.img_wrab img:hover{
+    transform: scale(1.2);
+}
+.txt_box_1 h4:first-child{
+    font-weight: bolder;
+    color: #888888;
+}
+.txt_box_1 h4:nth-child(3){
+    width: 350px;
+    line-height: 30px;
+}
+.border_bottom{
+    width: 50px;
+    border-bottom: 3px solid black;
+}
+/* modal */
+.f-x{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.w-m{
+    position: relative;
+    display: flex;
+    flex-direction: column;    
+    padding: 10px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+.ip1{
+    width: 470px;
+}
+.ip2{
+    width: 75%;
+}
+/* section04 end */
+/* section05 start */
+.section05{
+    padding-top: 300px;
+}
+.p-t-40{
+    padding-top: 30px;
+}
+.p-b-40{
+    padding-bottom: 100px;
+}
+.br-1{
+    width: 100px;
+    height: 2px;
+    margin-left:47% ;
+    margin-top: 20px;
+    border-bottom:4px solid black ;
+}
+
+/* tab */
+/* #h-bg-a{
+   background: #001f45;
+   border-top-left-radius: 5px 5px;
+   border-top-right-radius: 5px 5px;
+} */
+.h-bg{
+    width: 100%;
+   
+}
+.h-bg li{
+    width: 50%;
+    border: 1px solid #001f45;
+    border-top-left-radius: 5px 5px;
+    border-top-right-radius: 5px 5px;
+}
+#h-bg-a{
+    text-align: center;
+    border-top-left-radius: 5px 5px;
+    border-top-right-radius: 5px 5px;
+    
+}
+#home{
+    width: 100%;
+    height: 700px;    
+    background: url(../img/tab-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#menu1{
+    width: 100%;
+    height: 700px;    
+    background: url(../img/tab2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media(max-width:767px){
+    #home ,#menu1{
+        height: 320px; 
+    }
+}
+
+/* @keyframes */
+.rel-po{
+    position: relative;
+}
+.as{
+   
+}
+.as-1{
+    width: 20px;
+    height: 20px;
+    background: rgb(61, 216, 255);
+    position: absolute;
+    z-index: 10;
+    border-radius: 100px;
+    top:34.8%;
+    left:36.6%;
+    transform: translate(-50%,-50%);
+    animation-name: dota;
+    animation-duration: 1s;
+    /* animation-direction: alternate; */
+    animation-iteration-count: infinite;
+}
+@media(max-width:767px){
+    .as-1{
+        top:32.8%;
+        left:35.6%;
+    }
+}
+@keyframes dota{
+    0%{
+        transform: scale(1);
+        filter: opacity(100%);
+    }
+    50%{
+        transform: scale(0.95);
+        filter: opacity(95%);
+    }
+    100%{
+        transform: scale(1);
+        filter: opacity(100%);
+    }
+}
+
+.as-2{
+    width: 40px;
+    height: 40px;
+    background: rgba(61, 216, 255, 0.466);
+    position: absolute;
+    z-index: 10;
+    border-radius: 100px;
+    top:33.3%;
+    left:35.8%;
+    transform: translate(-50%,-50%);   
+    animation-name: dot;
+    animation-duration: 1s;
+    /* animation-direction: alternate; */
+    animation-iteration-count: infinite;
+    
+}
+@media(max-width:767px){
+    .as-2{
+        top:29.8%;
+        left:33.6%;
+    }
+}
+@keyframes dot{
+    0%{
+        transform: scale(1);
+        filter: opacity(100%);
+    }
+    50%{
+        transform: scale(0.9);
+        filter: opacity(50%);
+    }
+    100%{
+        transform: scale(1);
+        filter: opacity(100%);
+    }
+}

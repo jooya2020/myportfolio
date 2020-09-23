@@ -5,6 +5,10 @@
     src:local(※), 
         url('../fonts/Lobster.woff') format('woff');
 }
+.navbar_menu{
+    float: right;
+}
+.service_drop >li>a:hover{ color:#4ecdc4!important;}
 @media (max-width:1000px){
     .container{
         width:100%;
@@ -15,7 +19,15 @@
     .navbar-brand img{
         padding-left: 10px;
     }
+    .navbar_menu{float: left!important;width: 100%!important;margin:0}
+   
+  .service_drop{
+      background:none!important;
+  }
+  .service_drop >li>a{ color:#fff!important}
+  .service_drop >li>a:hover{ color:#4ecdc4!important;background:#999!important}
 }
+
 
 /* home */
 #home, #product,#service,#about_info,#Product_list,#testimonials{

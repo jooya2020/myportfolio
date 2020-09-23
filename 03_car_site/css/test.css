@@ -1,0 +1,492 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+    font-family: "BillieHarleyRegular";
+    src: url("../fonts/BillieHarley.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/BillieHarley.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../fonts/BillieHarley.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/BillieHarley.woff2") format("woff2"); /* Modern Browsers *//* font converted using font-converter.net. thank you! */
+      @font-face {
+          font-family: "BillieHarleyRegular";
+          src: url("../fonts/BillieHarley.eot"); /* IE9 Compat Modes */
+          src: url("../fonts/BillieHarley.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+            url("../fonts/BillieHarley.woff") format("woff"), /* Modern Browsers */
+            url("../fonts/BillieHarley.woff2") format("woff2"); /* Modern Browsers */
+          font-weight: normal;
+          font-style: normal;
+        }
+      
+      
+      li {
+          list-style: none;
+      }
+      .section01 {
+          background: url("../img/sonata5.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100vh;
+          width: 100%;
+      }
+      @media(max-width:767px){
+          .section01{
+              background-position:-900px;
+          }
+          .text_box {
+              margin-top: 20px;        
+          }
+          .text_box h1{
+              width:500px;
+              font-size: 45px!important;
+              line-height: 75pt;
+              margin-top: 100px!important;
+          }
+          .sub_title_bg{
+              margin: 0!important;
+              margin-top: -30px!important;
+              margin-right: 50px;
+          }
+      }
+      .left_txt {
+          /* padding */
+          padding-top: 10%;
+          padding-left: 200px;
+          padding-right: 8%;
+          /* text */
+          color: #fff;
+          text-align: end;
+          /* flex */
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          /* 글자 그림자 */
+          text-shadow: black;
+      }
+      
+      .left_txt h1 {
+          /* font */
+          font-family: "BillieHarleyRegular";
+          font-size: 50pt;
+          font-weight: 300;
+          /* padding */
+          padding-top: 7px;
+          padding-bottom: 30px;
+      
+      }
+      
+      .left_txt h3 {
+          /* padding */
+          padding-bottom: 10px;
+      }
+      
+      .brand-logo img {
+          width: 200px;
+          /* padding */
+          padding-top: 25px;
+          padding-left: 25px;
+      }
+      
+      .sub_title_bg {
+          width: 330px;
+          height: 120px;
+          background: rgba(0,0,0,0.35);
+          text-align: center;
+          /* padding,margin */
+          padding-top: 10px;
+          margin-right: 30px;
+      }
+      
+      .section1-1{
+          padding: 30px 0;
+          background: #777777;
+      }
+      /* row_1 start */
+      .c-s{
+          width: 60%;
+          
+      }
+      .car_icon>div>img{
+          width: 100px;
+      }
+      
+      /* row_2 start */
+      /* section02 */
+      .section02{
+           padding-top: 200px; 
+      }
+      .col-tit{
+          font-size: 40px;    
+      }
+      .bolder{
+          font-weight: bolder;
+      }
+      .p-t-150{
+          margin-top: 50px;
+      }
+      .til-c-1{
+          width: 35%;
+      }
+      
+      /* section03 start */
+      .section03{
+          padding-top: 200px;    
+      }
+      .car-brand-color{
+          padding-top: 15px;
+      }
+      .car-brand-color > ul {
+          display: flex;
+      }
+      
+      .car-brand-color > ul > li {
+          list-style: none;
+          width: 50px;
+          height: 50px;
+          border: 1px solid #ccc;
+          margin: 5px;
+      }
+      
+      #wh {
+          background-color: #f2f4f3;
+      }
+      #bl {
+          background-color: #abadac;
+      }
+      #hg{
+          background-color: #6a6c6d;
+      }
+      #ng{
+          background-color: #4e5357;
+      }
+      #ob{
+          background-color: #272e39;
+      }
+      #mb{
+          background-color: #1b1a1d;
+      }
+      #fr{
+          background-color: #970f1b;
+      }
+      .bl,.hg ,.ng ,.ob,.mb,.fr{
+          display: none;
+      }
+      @media(max-width:767px){
+          .wh img,.bl img,.hg img,.ng img,.ob img,.mb img,.fr img{
+              width: 500px;
+          }
+      }
+      
+      /* 섹션3 */
+      
+      .txt_box{
+          margin-top: 80px;
+      }
+      .txt_box h4:first-child{
+          font-weight: bolder;
+          color: #888888;
+      }
+      .txt_box h4:nth-child(3){
+          width: 350px;
+          line-height: 30px;
+      }
+      .border_bottom{
+          width: 50px;
+          border-bottom: 3px solid black;
+      }
+      .p1-50{
+          padding-left: 50px; 
+      }
+      /* row1 텍스트 */
+      .i_1_w{
+          width: 100%;
+          transition: all 1s;
+      }
+      .i_1_w img{
+          width: 100%;
+      }
+      .i_1_w:hover{
+      transform: scale(1.2);
+      filter: opacity(.2);
+      }
+      .cover{
+          width: 100%;    
+          overflow: hidden;
+          background: #000;
+      }
+      #p-n{
+          
+      }
+      @media(min-width:767px){
+          #p-n{
+              padding-left: 0;
+          }
+      }
+      /* row 간격띄우기 */
+      .p-t-50{
+          margin-top: 15px;
+      }
+      /* 모달슬라이드 start */
+      .gud{
+          padding-top: 250px;
+      }
+      #width800{
+          width: 1040px;
+      }
+      /* 모달슬라이드 end */
+      
+
+li {
+    list-style: none;
+}
+
+.section01 {
+    background: url("../img/sonata5.jpg");
+    background-position: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+@media(max-width:767px){
+    .section01{
+        background-position:-900px;
+    }
+    .text_box {
+        margin-top: 20px;        
+    }
+    .text_box h1{
+        width:500px;
+        font-size: 45px!important;
+        line-height: 75pt;
+        margin-top: 100px!important;
+    }
+    .sub_title_bg{
+        margin: 0!important;
+        margin-top: -30px!important;
+        margin-right: 50px;
+    }
+}
+.left_txt {
+    /* padding */
+    padding-top: 10%;
+    padding-left: 200px;
+    padding-right: 8%;
+    /* text */
+    color: #fff;
+    text-align: end;
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* 글자 그림자 */
+    text-shadow: black;
+}
+
+.left_txt h1 {
+    /* font */
+    font-family: "BillieHarleyRegular";
+    font-size: 50pt;
+    font-weight: 300;
+    /* padding */
+    padding-top: 7px;
+    padding-bottom: 30px;
+
+}
+
+.left_txt h3 {
+    /* padding */
+    padding-bottom: 10px;
+}
+
+.brand-logo img {
+    width: 200px;
+    /* padding */
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.sub_title_bg {
+    width: 330px;
+    height: 120px;
+    background: rgba(0,0,0,0.35);
+    text-align: center;
+    /* padding,margin */
+    padding-top: 10px;
+    margin-right: 30px;
+}
+/* row_1 end */
+.c-s{
+    width: 60%;
+}
+.car_icon>div>img{
+    width: 100px;
+}
+.border_b1{
+    border-bottom: 1px solid black;
+}
+/* row_2 end */
+/* section02 */
+
+.car-brand-color > ul {
+    display: flex;
+}
+
+.car-brand-color > ul > li {
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+#wh {
+    background-color: #f2f4f3;
+}
+#bl {
+    background-color: #abadac;
+}
+#hg{
+    background-color: #6a6c6d;
+}
+#ng{
+    background-color: #4e5357;
+}
+#ob{
+    background-color: #272e39;
+}
+#mb{
+    background-color: #1b1a1d;
+}
+#fr{
+    background-color: #970f1b;
+}
+.bl,.hg ,.ng ,.ob,.mb,.fr{
+    display: none;
+}
+@media(max-width:767px){
+    .wh img,.bl img,.hg img,.ng img,.ob img,.mb img,.fr img{
+        width: 500px;
+    }
+}
+
+/* 섹션3 */
+.padding_50{
+    padding-top:300px
+}
+.left_part{   
+}
+.more_icon img{
+    width: 100px;    
+
+}
+
+/* row1 텍스트 */
+.txt_box{}
+.txt_box h4:first-child{
+    font-weight: bolder;
+    color: #888888;
+}
+.txt_box h4:nth-child(3){
+    width: 350px;
+    line-height: 30px;
+}
+.border_bottom{
+    width: 50px;
+    border-bottom: 3px solid black;
+}
+
+/* row2 이미지*/
+.left_part>div:nth-child(1){
+    height: 300px;
+}
+.inner_left_img{
+    width: 380px;    
+    height: 300px;
+    background: url("../img/inner_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    transition: all 1s;
+   
+}
+/* hover */
+.inner_left_img:hover{
+    transform: scale(1.2);
+}
+.inner_left_wrab{
+    width: 380px;    
+    height: 300px;
+
+    overflow: hidden;
+}
+
+
+/* left end */
+/* row1 */
+.wide_width{
+    width:750px;
+    height: 350px;
+    background: url("../img/inner_4.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    transition: all 1s;
+}
+/* hover */
+.wide_width:hover{
+    transform: scale(1.2);
+}
+.wide_wrab{
+    width:750px;
+    height: 350px;
+    
+    margin-left: 15px;
+    overflow: hidden;
+}
+/* row2 */
+.inner_2_bg{
+    width:435px;
+    height: 400px;
+    background: url("../img/inner_2.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 1s;
+}
+/* hover */
+.inner_2_bg:hover{
+    transform: scale(1.2);
+}
+.inner_wrab_2{
+    width:435px;
+    height: 400px;
+    margin-top: 20px;
+
+    overflow: hidden;
+} 
+
+.inner_3_bg{
+    width:295px;
+    height: 300px;
+    background: url("../img/inner_3.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    transition: all 1s;
+}
+/* hover */
+.inner_3_bg:hover{
+    transform: scale(1.2);
+}
+.inner_wrab_3{
+    width:295px;
+    height: 300px;
+    margin-top: 20px;
+
+    overflow: hidden;
+}
+
+/* right end */
