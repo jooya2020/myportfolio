@@ -201,12 +201,10 @@ $(".item_btn04").ready(function ()
     });
 
 
-    $('.dropdown').mouseover(function(){ 
-        $('.dropdown>a').css('color','#4ecdc4');           
+    $('.dropdown').mouseover(function(){                  
         $('.dropdown').addClass('open'); 
     });
-    $('.dropdown').mouseleave(function(){ 
-        $('.dropdown>a').css('color','#fff');         
+    $('.dropdown').mouseleave(function(){             
         $('.dropdown').removeClass('open'); 
     });
 
