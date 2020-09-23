@@ -56,3 +56,18 @@
       
       color: red;
   }
+  #vedio{
+    width:560px;
+    height: 315px;
+    display:none;
+    position: fixed;
+    z-index: 99999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%)
+  }
+  @media (max-width:500px){
+    #vedio{ 
+      
+     }
+  }
