@@ -1,13 +1,13 @@
+
 $(document).ready(function() {	
 
 		var id = '#dialog';
 	
 		//Get the screen height and width
-		var maskHeight = $(document).height();
-		var maskWidth = $(window).width();
+		
 	
 		//Set heigth and width to mask to fill up the whole screen
-		$('#mask').css({'width':maskWidth,'height':maskHeight});
+		$('#mask').css({'width':"100%",'height':"100%"});
 		
 		//transition effect		
 		$('#mask').fadeIn(1000);	
