@@ -292,3 +292,7 @@ function button1_click() {
         });
     });
 }	
+
+function myFunction() {
+   alert('문의가 완료되었습니다');
+  }

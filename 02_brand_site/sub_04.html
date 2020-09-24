@@ -111,38 +111,62 @@
             </div>
             <div class="col-sm-9 cont2">
                 <div>
-                    <h4>상담시간 AM 08:30 ~ PM 16:00 (점심시간 12:00-13:00, 휴무 주말/공휴일)</h4>
+                    <h4>상담시간 AM 08:30 ~ PM 16:00 <br class="contect_br">(점심시간 12:00-13:00, 휴무 주말/공휴일)</h4>
                 </div>
             </div>
         </div>        
     </div>
 </section>
 <section class="info">
-    <div class="container">
-        <form>
-            <div class="form-group">
-            <label for="usr">이름:</label>
-            <input type="text" class="form-control" id="usr" placeholder="이름">
-            </div>
-            
-            <div class="form-group">
-            <label for="email">email</label>:</label>
-            <input type="email" class="form-control" id="email" placeholder="email">
-            </div>
-            <div class="form-group">
-                <label for="sel1">문의유형 :</label>
-                    <select class="form-control" id="sel1">
-                        <option>선택하기</option>
-                        <option>기업 상품구매문의</option>
-                        <option>고객 서비스문의</option>
-                    </select>
+    <div class="container info_cont">
+        <h3 class="info_h3_pc">1:1 문의</h3>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="padding_info">
+                    <h4>Contact Details</h4>
+                    <div>
+                        <h5>대표번호</h5>
+                        <p>1577-888888</p>
+                        <h5>e-mail</h5>
+                        <p>jooya202002@gmail.com</p>
+                        <h5>Address</h5>
+                        <p>경기도 김포시 구래동 </p>
+                    </div>
                 </div>
-            
-            <div class="form-group">
-                <label for="comment">내용:</label>
-                <textarea class="form-control" rows="5" id="comment"></textarea>
             </div>
-        </form>
+            <div class="col-sm-6">
+                <h3 class="info_h3_m">1:1 문의</h3>
+                <form class="form">
+                    <div class="form-group">
+                    <label for="usr">이름:</label>
+                    <input type="text" class="form-control" id="usr" placeholder="이름">
+                    </div>
+                    
+                    <div class="form-group">
+                    <label for="email">email</label>:</label>
+                    <input type="email" class="form-control" id="email" placeholder="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="sel1">문의유형 :</label>
+                            <select class="form-control" id="sel1">
+                                <option>선택하기</option>
+                                <option>기업 상품구매문의</option>
+                                <option>고객 서비스문의</option>
+                            </select>
+                        </div>
+                    
+                    <div class="form-group">
+                        <label for="comment">내용:</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                </form>
+                <div class="text-right">
+                    <button type="button" class="btn contact_button" onclick="myFunction()">보내기</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="border_bottom"></div>
     </div>
 </section>
 
