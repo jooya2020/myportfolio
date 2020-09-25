@@ -500,3 +500,17 @@ button:focus,
     outline-style: none;
     box-shadow: 0 0 0 0 rgba(0,123,255,0);
 }
+
+.product_btn{
+    width: 245px;
+    padding-bottom:10px;
+    margin: 0 auto;
+  }
+  .product_btn a{
+    color: #4c4c4c;
+    border-bottom:2px solid #4c4c4c;
+  }
+  .product_btn a:hover{
+    color: #4ecdc4;
+    border-bottom:2px solid #4ecdc4;
+  }
