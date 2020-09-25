@@ -102,7 +102,7 @@ padding-bottom:100px
 /* item01 */
 .item01{
     /* height: 500px; */
-    background: #fff; 
+    
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
@@ -264,7 +264,7 @@ padding-bottom:100px
 
 .item03{
     /* height: 500px; */
-    background: #fff; 
+    /* background: #fff;  */
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;

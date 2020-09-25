@@ -444,7 +444,8 @@ align-self: center;
       padding-bottom: 20px;
   }
 .site-footer h4{
-    font-size:1.5rem;
+    font-size: 14px;
+    font-family:'notosanskr';
     margin: 0;
     line-height:24px;
 }

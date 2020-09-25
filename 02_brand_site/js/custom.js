@@ -61,6 +61,8 @@ $(".item_wrab").ready(function ()
         $('.item_left h4').css('color','#fff');
         $('.item_btn').css('border','1px solid #fff');
         $('.item_btn p').css('color','#fff');
+        $('.hover_before').css('display','none');
+        $('.hover_after').css('display','block');
        
     }, function() {       
         $('.item_left').css('background','rgb(241, 241, 241)');
@@ -70,6 +72,9 @@ $(".item_wrab").ready(function ()
         $('.item_left h4').css('color','#4c4c4c'); 
         $('.item_btn').css('border','1px solid #4c4c4c');  
         $('.item_btn p').css('color','#8f8f8f');
+        $('.hover_before').css('display','block');
+        $('.hover_after').css('display','none');
+        
     });
 });
 $(".item_wrab02").ready(function () 

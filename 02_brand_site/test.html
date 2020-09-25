@@ -26,12 +26,47 @@
 
 
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		<script src="js/html5shiv.min.js"></script>
-		<script src="js/respond.min.js"></script>
-		<![endif]-->
+	<style>
+		.layer-popup {
+			z-index: 99999;
+			width:500px;
+			height: 380px;
+			position:absolute;
+			left:50%;
+			top:50%;
+			box-shadow: 5px 5px 20px rgba(50,50,50,.5) ;
+			background-color:#fff
+		}
+		#popup_01{
+			transform:translate(-50%,-50%)
+		}
+		.popup-control{
+			width:100%;
+			height:30px;
+			text-align:right;
+			margin:0;
+			padding: 0;			
+		}
+		.popup-control li{
+			display: inline;
+			margin-right:20px;
+			line-height:30px;
+		}
+		.popup-control li a{
+			color:#000;
+			text-decoration:none;
+		}
+		.popup-dimming{
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			left:0;
+			top:0;
+			z-index: 999;
+			background-color:rgba(0,0,0,.8);
+			display:none;
+		}
+	</style>
 	</head>
 	<body data-spy="scroll" data-target=".main-nav">
 <div id="popup_01" class="layer-popup">
@@ -46,7 +81,49 @@
 </div>
 <!-- 모달 배경-->
 <div class="pop-dimming"></div>
+<script>
+	jQuery(function($){
+		var $pop = $(".layer-popup");
+		var $dim = $('.pop-dimming');
+		var $close = $('.close');
+		var $today_close = $('.today-close');
+	});	
+	//TODAY CLOSE : COOKIE
+	jQuery(function($){
+		function popCloseCookie() {
+			$.cookie('popup','false',{
+				path:'/',
+				expires:1,
+				domain:'url',
+				secure: false
+			});
+			// close
+			popClose();
+		}
+		// EXPIER
+	
+		if($.cookie('popup')=='false'){
+			$(".layer-popup").hide(); //popClose();
+		}else{
+			$('.layer-popup').show();
+			dimming.fadeIn(duration,'easeInOutQuad');
+		}
+		// CLOSE
+		function popClose(){
+			$('.layer-popup').fadeOut(duration,'easeInOutQuad');
+		};
+		// HANDLER
+		$close.on('click',popClose);
+		$today_close.on('click',popCloseCookie);
+		// BG SHADOW
+		$('.popup-control').on('click','a',function(){
+			$dim.fadeOut(duration,'easeInOutQuad');
+		});
+	});
+	
 
+	
+</script>
 		<header class="st-navbar">
 			<nav class="navbar navbar-default navbar-fixed-top clearfix" role="navigation">
 				<div class="container"><!-- Brand and toggle get grouped for better mobile display -->
