@@ -61,7 +61,7 @@ padding-bottom:100px
 }
 @media (max-width:900px){
     .service_1{
-    padding-bottom:200px
+    padding-bottom:560px!important;
     }
     .item01_r{
         top:-120px;
@@ -96,13 +96,13 @@ padding-bottom:100px
     text-align: center;
     font-weight:100;
     padding-top: 15px;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
 }
 
 /* item01 */
 .item01{
     /* height: 500px; */
-    
+  background:rgb(241, 241, 241);
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
@@ -110,7 +110,7 @@ padding-bottom:100px
 }
 .item_left{   
     background: rgb(241, 241, 241);
-    padding:20px
+    padding:20px 20px 75px 20px
 }
 .item_left h1{
     margin-top:100px
@@ -153,15 +153,20 @@ padding-bottom:100px
 .item_m_01{
     display:none;
 }
-@media (max-width:900px){
-    .top_50{
-        top:-50px!important;
+@media (max-width:900px){ 
+    .item02_r{
+        top:50px!important;
     }
-    .top_0{
-        top:0px!important;
+    
+    .item03_r{
+        top:180px!important;
     }
+    .item04_r{
+        top:370px!important;
+    }
+    
     .col-sm-8{
-        height: 470px!;
+        height: 470px!important;
     }
     .item01{
         display:flex!important;
@@ -209,7 +214,7 @@ padding-bottom:100px
 .item02{
     /* margin-top:350px; */   
     height: 500px;
-    /* background:#fff; */
+    background:#fff;
     z-index: 3;
     left: 50%;
     transform: translateX(-50%);
@@ -225,7 +230,7 @@ padding-bottom:100px
 }
 .item_left02{   
     background: #fff;
-    padding:20px
+    padding:20px 20px 75px 20px
 }
 .item_left02 h1{
     margin-top:100px
@@ -272,7 +277,7 @@ padding-bottom:100px
 }
 .item_left03{   
     background: rgb(241, 241, 241);
-    padding:20px
+    padding:20px 20px 75px 20px
 }
 @media (max-width:900px){
     .item03{
@@ -346,7 +351,7 @@ padding-bottom:100px
 }
 .item_left04{   
     background: #fff;
-    padding:20px
+    padding:20px 20px 72px 20px
 }
 .item_left04 h1{
     margin-top:100px
@@ -412,7 +417,21 @@ padding-bottom:100px
     position: absolute!important;
     bottom:400px!important
 }
-
+.losting_wrab{
+    display:flex;
+    justify-content:center;
+}
 .losting_flex{
-    display:flex
+    display:flex;
+}
+.losting_flex p{
+    padding-right: 20px;
+    font-size:24px;
+    line-height:30px
+}
+.hover_m01,.hover_m02,.hover_m03,.hover_m04{
+    display:block;
+}
+.hover_W01,.hover_W02,.hover_w03,.hover_w04{
+    display:none;
 }

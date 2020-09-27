@@ -1,3 +1,4 @@
+@import "font-awesome";
 .sub_4{
     width: 100%;
     padding-top:10%;
@@ -90,11 +91,11 @@
     padding-left: 20px;
 }
 .padding_info > div{
-    margin-top:50px;
     padding-left: 10px;
 }
-.padding_info>h4{
-    font-size:24px
+.padding_info>h4,.col-sm-6>h4{
+    font-size:24px;
+    line-height:100px
 }
 .padding_info>div>h5{
     font-size:21px!important;
@@ -144,4 +145,25 @@
     .contact_title{
         margin-top: 10px;
     }
+}
+.icon_flex{
+    display:flex
+}
+.icon_flex i{
+    font-size:38px;    
+    color:rgb(114, 85, 85)
+}
+.icon_flex p{
+    margin-left: 20px;
+    font-size:18px;
+    line-height:24px
+}
+.icon_flex_1 P{
+    padding-left: 8px;
+}
+.icon_flex_2 P{
+    padding-top: 5px;
+}
+.icon_flex_3 P{
+    padding-top: 5px;
 }
