@@ -5,5 +5,121 @@
 .p{
     width:100%;
     height: 100vh;
-    background:#fff
+    background:#fff!important;
 }
+body{
+    margin:0;
+    padding:0;
+    color:rgb(15, 15, 15);
+    background:#fff!important;
+    overflow-x: hidden;
+}
+.potpolio-title{
+    margin: 30px;
+}
+.potpolio-title h1{  
+    color: rgb(15, 15, 15);
+    font-size:5rem;
+    font-weight:900;   
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+
+.progressbar {
+    position: fixed;
+    top: 0;
+    left: 85%;
+    background:#fff;
+    width: 1px;
+    z-index: 1;
+}
+
+.navigation-wrapper ul {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 200px;
+    list-style: none;
+    position: absolute;
+}
+
+.navigation-item {
+    display: block;
+    user-select: none;
+    margin: 120px 0;
+}
+a{
+    text-align: start;
+    font-size: 100px;
+    color:#fff;
+    decoration: none;
+    font-weight:900;
+    -webkit-text-stroke:1px rgb(15, 15, 15);    
+}
+span {
+    text-align: start;
+    position: relative;
+    display: block;
+  }
+  
+  .navigation-item span:before {
+     
+    width: 0;
+    color:rgb(15, 15, 15);
+    overflow: hidden!important;
+    position: absolute;
+    content: attr(data-text);
+    transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
+  }
+  
+  .navigation-item span:hover:before {
+    width: 100%;
+  }
+  .project-preview-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .project-preview {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    width: 0px;
+    height: 60%;
+    background: url(img-1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  @media (max-width: 900px) {
+    .progressbar,
+    .project-preview-wrapper {
+      /* display: none; */
+    }
+    .project-preview {
+       
+        top: 30%;
+        left: 15%;
+        width: 0px;
+        height: 60%;
+        background: url(img-1.jpg) no-repeat 50% 50%;
+        background-size: cover;
+        overflow: hidden;
+      }
+    a {
+      font-size: 2.5rem;
+    }
+    .navigation-wrapper ul {
+        margin-top: 50px;
+        margin-left: 42px;
+        margin-bottom: 200px;
+        list-style: none;
+        position: absolute;
+    }
+    .navigation-item {
+        margin: 60px 0;
+    }
+  }
